@@ -28,3 +28,6 @@
      and we prevent the default behaviour with the preventDefault()
      method on our event object (because we are submitting a form we don't want refresh the page).
   10. Finally we call the api_call() function when the user clicks this button.
+  
+  
+  The API_KEY has been removed from the js file so, in order to use this app, the user will have to generate a new key on [Open Weather Map](https://openweathermap.org/).
