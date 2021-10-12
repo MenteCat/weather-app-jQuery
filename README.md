@@ -18,7 +18,7 @@
      we want to extract from the API in order to display the data.
   7. The Weather constant will determine what kind of icon will be displayed.
      We make this data widget visible by calling the jQuery method .show()
-     then we create <h3>, <p>, <img> and <button> markup elements to go in our <div> in the main
+     then we create h3, p, img and button markup elements to go in our div in the main
      index.html.
   8. We create a constant that contains the value of "details" button.
      The CSS class ".weather-details-button" is associated.
