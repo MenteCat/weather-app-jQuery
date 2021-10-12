@@ -1,13 +1,13 @@
 # weather-app-jQuery (Walkthrough)
 
-  ## function called api_call:
-  1. Grab user location by calling the jQuery .val()
-     method by calling the user input constant.
-  2. API_KEY that the openweathermap provides us with.
-  3. The url we want to make the request to as `template literal`
-     as we are injecting the location constant that gets updated by what the user 
-     types and then the API_KEY.
-  4. We start off by making a check: if the "location" exists (value of the user input),
+  ## The function api_call:
+  1. Grabs user location by calling the jQuery .val()
+     method (user input constant).
+  2. API_KEY provided by openweathermap.
+  3. The url we want to make the request to as `template literal`.
+     We are injecting the location constant that gets updated by what the user 
+     types.
+  4. We start off by making a check: (if) the "location" exists (value of the user input),
      only then we want to go ahead and make a request to the url.
   5. If the "location" does not exist (else) we call right at the end
       the .show() method on the "error" to display it and then we .hide()
@@ -16,15 +16,14 @@
      which is specified and inside we check if the request was succesful
      (success method) and then we grab all the properties that
      we want to extract from the API in order to display the data.
-  7. Weather const to determin what kind of icon will be displayed. Then we make
-    this data widget visible by calling the jQuery method .show() then we
-    create an h3, p, img and button markup elements to go in our div in the main
-    index.html. Sys is a property that has another property .country
-    which is where the name of the country lives.
-  8. We create a constant that contains the value of details button.
+  7. The Weather constant will determine what kind of icon will be displayed.
+     We make this data widget visible by calling the jQuery method .show()
+     then we create <h3>, <p>, <img> and <button> markup elements to go in our <div> in the main
+     index.html.
+  8. We create a constant that contains the value of "details" button.
      The CSS class ".weather-details-button" is associated.
-  9. Up to here this is still calling the api function, 
+  9. Up to here this is still calling the API function, 
      we need to wait to call this function and we do that by setting the jQuery method onto the searchButton.click()
      and we prevent the default behaviour with the preventDefault()
-     method on our event object, because we are submitting a form we don't want refresh the page.
+     method on our event object (because we are submitting a form we don't want refresh the page).
   10. Finally we call the api_call() function when the user clicks this button.
