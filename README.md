@@ -1,3 +1,4 @@
+![jQueryWeatherApp](https://user-images.githubusercontent.com/63736914/136951474-81b3b784-cde3-4293-8513-6818421a051c.png)
 # weather-app-jQuery (Walkthrough)
 
   ## The function api_call:
