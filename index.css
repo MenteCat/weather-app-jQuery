@@ -5,12 +5,13 @@
 }
 
 body {
+
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-family: 'Permanent Marker', cursive;
-  background-color: white;
+  background-color: lightgoldenrodyellow;
 }
 
 .container {
@@ -21,7 +22,7 @@ body {
   width: 100%;
   background-color: #2f7fb3;
   padding: 3rem 1rem;
-  color: white;
+  color: orange;
   margin-bottom: 100px;
 }
 
@@ -46,7 +47,11 @@ body {
 
 .user-input::placeholder {
   font-size: 20px;
-  color: lightgray;
+  color: rgb(245, 218, 167);
+}
+
+textarea:focus, input:focus{
+  outline: none;
 }
 
 .search-button {
@@ -56,13 +61,13 @@ body {
   background-color:#d5e28d ;
   height: 40px;
   width: 40px;
-  border-radius: 100%;
+  border-radius: 50%;
   margin-left: 10px;
 }
 
 .weather-data {
   color: white;
-  background-color: #2c313d;
+  background-color: #d5e28d;
   width: 500px;
   margin: 0 auto;
   border-radius: 4px;
@@ -71,7 +76,7 @@ body {
 }
 
 .city-name {
-  color: #ffd209;
+  color: orange;
   font-size: 30px;
   padding-top: 50px;
   margin-bottom: 20px;
@@ -85,7 +90,8 @@ body {
 }
 
 .weather-temperature {
-  font-size: 50px;
+  font-family:'Segoe UI', Tahoma;
+  font-size: 30px;
   margin-top: 30px;
 }
 
@@ -104,33 +110,15 @@ body {
   letter-spacing: 2px;
   padding-bottom: 20px;
   cursor: pointer;
-  color: #ffd209;
+  color: orange;
   margin: 0 auto;
 }
 
 .weather-detail {
   display: inline-block;
+  font-family:'Segoe UI', Tahoma;
   font-size: 20px;
   padding-bottom: 20px;
-}
-
-.weather-icon {
-  width: 150px;
-  margin: 0;
-}
-
-/* MEDIA QUERIES */
-
-@media (max-width: 320px) {
-  .header h1 {
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 740px) {
-  .header {
       padding: 1rem;
   }
   .header h1 {
@@ -143,7 +131,7 @@ body {
   }
   .search-button {
     font-size: 20px;
-    border: solid 2px #2c313d;
+    border: solid 2px #d5e28d;
     height: 30px;
     width: 30px;
   }
@@ -155,5 +143,20 @@ body {
   }
   .weather-emoji {
     font-size: 30px;
+  } 
+
+  .footer {
+    background: #2f7fb3;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding: 30px 50px;
+    color: orange;
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
   }
-} 
+
+

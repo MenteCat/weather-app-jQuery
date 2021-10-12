@@ -12,7 +12,7 @@ $(document).ready(() => {
 
   const api_call = () => {
     const location = userInput.val() 
-    const API_KEY = "9c3cb98520f309bd159e77512e8e5e28"
+    const API_KEY = ""
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}&units=metric`
     if (location) {
       $.ajax({ url, type: "GET", dataType: "jsonp",
